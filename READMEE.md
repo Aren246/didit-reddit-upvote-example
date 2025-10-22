@@ -2,12 +2,12 @@ Here is my reflection on this weeks assignment. For this weeks assignment I note
 
 ## Dev log
 
-1. Deployed on Vercel  to see errors & bugs.
+1. Deployed on Vercel to see errors & bugs.
 2. Created tables in Supabase that were provided
 3. Uncommented the UNIQUE_ID
 4. Created an .env file
 5. Did npm i and installed packages needed
-6. Ran npm run dev to see errors in console
+6. Ran npm run dev to see errors in console - reasonsing for this is because ive recently done assignments where I'd forget to check, once I did inspect the console, errors were easy to resolve
 7. Added Supabase transaction code
 8. Added OAuth Git Keys to .env
 9. Added variables to Vercel
