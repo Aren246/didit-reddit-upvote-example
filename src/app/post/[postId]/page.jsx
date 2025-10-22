@@ -3,6 +3,18 @@ import { CommentList } from "@/components/CommentList";
 import { Vote } from "@/components/Vote";
 import { db } from "@/db";
 
+export async function generateMetadata({ params }) {
+  const { rows: posts } = await db.query(
+    `SELECT title FROM posts WHERE id = $1 LIMIT 1;`,
+    [params.postId]
+  );
+ return {
+  title: posts[0] ? posts[0].title : "Post",
+ }
+  
+}
+
+
 export default async function SinglePostPage({ params }) {
   const postId = params.postId;
 
@@ -11,7 +23,7 @@ export default async function SinglePostPage({ params }) {
     COALESCE(SUM(votes.vote), 0) AS vote_total
     FROM posts
     JOIN users ON posts.user_id = users.id
-    LEFT JOIN votes ON votes.post_id = posts.id
+    LEFT JOIN votes ONs votes.post_id = posts.id
     WHERE posts.id = $1
     GROUP BY posts.id, users.name
     LIMIT 1;`,
