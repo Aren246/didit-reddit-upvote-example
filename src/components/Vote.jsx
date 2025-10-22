@@ -49,14 +49,21 @@ export async function Vote({ postId, votes }) {
 
   async function upvote() {
     "use server";
+    try {
     await handleVote(session?.user?.id, postId, 1);
+  } catch (error) {
+    return { error: error.message };
   }
+}
 
   async function downvote() {
     "use server";
+       try {
     await handleVote(session?.user?.id, postId, -1);
+  } catch (error) {
+    return { error: error.message };
   }
-
+}
   return (
     <>
       <form className="flex items-center space-x-3 pl-3">
