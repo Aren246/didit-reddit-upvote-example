@@ -1,6 +1,6 @@
 Here is my reflection on this weeks assignment. For this weeks assignment I noted down on paper my reflections as a devlog. This is the first time using this method and I think I will be continuing with this for future projects. I've noted mistakes down before but not step by step actions that were done to complete the assignment
 
-## Devlog
+## Dev log
 
 1. Deployed on Vercel  to see errors & bugs.
 2. Created tables in Supabase that were provided
@@ -14,8 +14,3 @@ Here is my reflection on this weeks assignment. For this weeks assignment I note
 10. Deployed successful after changing .env
 11. Issues with the log-in - wasnt able to understand why. I changed the github url to the vercel url and still recieved error. Added screenshot of error page to submission.
 12. Made Dynamic Metadata - only bit of coding to commit and push. 
-
-## What I Found Difficult
-
-OAuth Authentication & Debugging:
-The login functionality was the most challenging part. Even after updating the GitHub OAuth callback URL from localhost to the Vercel deployment URL, authentication errors persisted. The error messages weren't clear about what was wrong, making it hard to pinpoint whether the issue was with the callback URL format or something else entirely. 
