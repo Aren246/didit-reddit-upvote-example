@@ -7,13 +7,13 @@ Here is my reflection on this weeks assignment. For this weeks assignment I note
 3. Uncommented the UNIQUE_ID
 4. Created an .env file
 5. Did npm i and installed packages needed
-6. Ran npm run dev to see errors in console - reasonsing for this is because ive recently done assignments where I'd forget to check, once I did inspect the console, errors were easy to resolve
+6. Ran npm run dev to see errors in console - reasonsing for this is because ive recently done assignments where I'd forget to check the console. Once I did inspect the console, errors were easy to pin-point & resolve
 7. Added Supabase transaction code
 8. Added OAuth Git Keys to .env
 9. Added variables to Vercel
 10. Deployed successful after changing .env
 11. Issues with the log-in - wasnt able to understand why. I changed the github url to the vercel url and still recieved error. Added screenshot of error page to submission (ignore screenshot😂)
-12. Made Dynamic Metadata
+12. Made Dynamic Metadata - used nextjs document on how to add in. the syntax wasn't new to me but found difficult to implement 
 
 
 ## What I Found Difficult
